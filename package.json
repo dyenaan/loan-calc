@@ -1,6 +1,6 @@
 {
   "name": "loan-calc",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Loan amortization and hardship-plan calculations for a consumer lending team.",
   "main": "src/index.js",
   "files": ["src"],
