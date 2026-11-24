@@ -1,3 +1,5 @@
 node_modules/
 coverage/
 *.tgz
+
+.github/workflows/release.yml
