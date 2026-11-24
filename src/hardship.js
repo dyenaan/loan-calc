@@ -7,7 +7,7 @@ const { monthlyPayment, round2 } = require('./amortization');
  * capitalized, then the remaining balance re-amortizes over the remaining term.
  */
 function deferral({ balance, annualRate, remainingMonths, deferMonths }) {
-  if (!Number.isInteger(deferMonths) || deferMonths < 1 || deferMonths > 6) {
+  if (!Number.isInteger(deferMonths) || deferMonths < 1 || deferMonths > 12) {
     throw new RangeError('deferMonths must be an integer between 1 and 6');
   }
   if (deferMonths >= remainingMonths) {

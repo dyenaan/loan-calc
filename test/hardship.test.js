@@ -10,8 +10,8 @@ describe('deferral', () => {
     expect(d.capitalizedBalance).toBeCloseTo(8000 + d.accruedInterest, 2);
   });
 
-  test('rejects deferrals over 6 months', () => {
-    expect(() => deferral({ ...base, deferMonths: 7 })).toThrow(RangeError);
+  test('rejects deferrals over 12 months', () => {
+    expect(() => deferral({ ...base, deferMonths: 13 })).toThrow(RangeError);
   });
 
   test('rejects deferral covering the whole term', () => {
